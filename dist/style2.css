@@ -1,0 +1,190 @@
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #fafafa;
+  margin: 0 auto;
+}
+
+.containers {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* -----------------------------------------------Left------------------------------------------------------------ */
+.left-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px;
+}
+.left-section img {
+  margin-top: -100px;
+  padding: 30px;
+}
+
+.text-container {
+  padding: 30px;
+}
+.text-container h1 {
+  font-size: 50px;
+  color: #333a50;
+}
+.text-container p {
+  margin-top: 15px;
+  line-height: 22px;
+  color: #81889e;
+  font-size: 15px;
+}
+
+.date-container {
+  margin-left: 25px;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  padding-bottom: 10px;
+  gap: 10px;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+.info .date {
+  color: #5175ff;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .timer {
+  display: flex;
+  gap: 15px;
+}
+.wrapper .timer div {
+  background-color: #eff1ff;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.wrapper .timer h1 {
+  color: #5175ff;
+}
+.wrapper .timer p {
+  color: #9397a9;
+}
+
+/* -------------------------------------------------Right---------------------------------------------------------- */
+.right-section {
+  background-color: #25293b;
+  overflow: hidden;
+  min-height: 80vh;
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+}
+.right-section img {
+  position: absolute;
+  top: -400px;
+  max-width: 1000px;
+}
+
+/* ----------------------------------------------Form------------------------------------------------------------- */
+.form {
+  margin: 0 auto;
+  position: relative;
+  left: 200px;
+  width: 600px;
+  padding: 30px;
+  gap: 29px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+.form input {
+  border: none;
+  border-bottom: 1px solid #c3c5d1;
+  color: #9c9ea6;
+  width: 100%;
+  padding: 20px;
+}
+.form button {
+  background-color: #4973ff;
+  color: white;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 100px;
+}
+
+/* ----------------------------------------------Responsive------------------------------------------------------------- */
+@media screen and (max-width: 850px) {
+  .containers {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left-section {
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+  }
+  .svg {
+    display: flex;
+    padding-left: 30px;
+  }
+  .svg img {
+    margin: 0px;
+    padding: 0px;
+  }
+  .text-container h1 {
+    font-size: 30px;
+  }
+  .text-container p {
+    font-size: 13px;
+  }
+  .info {
+    justify-content: center;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+  .right-section {
+    width: 100%;
+    height: 20vh;
+  }
+  .right-section img {
+    top: -400px;
+    max-width: 1000px;
+  }
+  .date-container {
+    margin-left: 0px;
+  }
+  .form {
+    transform: translateY(50%);
+    left: 0px;
+    width: calc(100% - 60px);
+    margin-top: -100px;
+  }
+  .right-section img {
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .svg {
+    display: block;
+    padding: 0px;
+  }
+  .left-section {
+    background-image: url("./officelite-coming-soon-site/starter-code/assets/sign-up/bg-pattern-side.svg");
+  }
+}/*# sourceMappingURL=style2.css.map */
